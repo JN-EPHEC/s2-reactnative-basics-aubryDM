@@ -1,18 +1,13 @@
-import React, { useState } from "react";
-import { SafeAreaView, StyleSheet, Text } from "react-native";
+import CounterScreen from "@/components/CounterScreen";
+import React from "react";
+import { SafeAreaView, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
-  // Initialize state for the counter with an initial value of 0.
-  const [count, setCount] = useState(0);
 
-  // Function to increment the count.
-  const incrementCount = () => {
-    // Write your logic here to increment the count
-  }
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Replace this part with your soluce</Text>
+      <CounterScreen/>
     </SafeAreaView>
   );
 }
